@@ -6,15 +6,6 @@ const search = (ev) => {
     }
 }
 
-document.querySelector('#search-btn').onclick = (ev) => {
-  search();
-  const term = document.querySelector('#search-bar').value;
-  //Check destination length
-  if (term.length < 3 || term.length > 15){
-    return;
-  }
-  window.location = "/templates/prefs.html?search=" + term;
-}
 
 document.querySelector('#search-bar').onkeyup = (ev) => {
     // Number 13 is the "Enter" key on the keyboard
@@ -28,5 +19,9 @@ document.querySelector('#search-bar').onkeyup = (ev) => {
           return;
         }
         window.location = "./templates/prefs.html?search=" + term;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3f27eddce68d761c4e3edb59e5172d881aa67dba
     }
 };
