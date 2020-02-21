@@ -2,12 +2,11 @@ body, html {
   width: 100%;
   height: 100vh;
 }
-
-
 .wrapper{
-  height: 110vh;
+  height: 100vh;
   background-color: #68a0bb;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .header{
@@ -20,16 +19,8 @@ h1 {
   text-transform: capitalize;
 }
 
-.categories{
-  font-size: 25px;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
 .jumbotron {
-  border-radius: 1000px;
-  padding: 0;
-  margin: 0;
+  margin: 50px 100px;
 }
 
 .main-content {
@@ -39,6 +30,7 @@ h1 {
 .make-itn{
   margin-top: 20px;
 }
+
 
 
 

@@ -13,7 +13,7 @@ document.querySelector('#search-btn').onclick = (ev) => {
   if (term.length < 3 || term.length > 15){
     return;
   }
-  window.location = "/templates/prefs?search=" + term;
+  window.location = "/templates/prefs.html?search=" + term;
 }
 
 document.querySelector('#search-bar').onkeyup = (ev) => {
@@ -27,15 +27,6 @@ document.querySelector('#search-bar').onkeyup = (ev) => {
         if (term.length < 3 || term.length > 15){
           return;
         }
-        window.location = "/templates/prefs?search=" + term;
+        window.location = "/templates/prefs.html?search=" + term;
     }
 };
-
-const loadDestination = () => {
-  let l = window.location.href;
-  let get_dest = l.split('=');
-  const destination = get_dest[1].replace('%20', ' ');
-  return destination;
-}
-
-document.querySelector('#dest').innerText = loadDestination;
