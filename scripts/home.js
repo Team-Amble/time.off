@@ -27,6 +27,6 @@ document.querySelector('#search-bar').onkeyup = (ev) => {
         if (term.length < 3 || term.length > 15){
           return;
         }
-        window.location = "/templates/prefs.html?search=" + term;
+        window.location = "./templates/prefs.html?search=" + term;
     }
 };
