@@ -1,4 +1,3 @@
-
 window.addEventListener('DOMContentLoaded', function(){
   let l = window.location.href;
   let get_dest = l.split('=');

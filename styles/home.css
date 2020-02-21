@@ -19,7 +19,7 @@ html, body {
 
 .wrapper {
   display: grid;
-  background-image: url("/images/home.jpg"); 
+  background-image: url("/time.off/images/home.jpg");
   grid-template-rows: 1fr 6fr;
   width: 100%;
   height: 100vh;
