@@ -20,7 +20,7 @@ h1 {
 }
 
 .jumbotron {
-  margin: 50px 100px;
+  margin: 100px 100px;
 }
 
 .main-content {
@@ -28,7 +28,40 @@ h1 {
 }
 
 .make-itn{
-  margin-top: 20px;
+  margin-top: 60px;
+}
+
+.checkbox-row {
+  display: grid;
+  grid-template-areas:
+    "1 2 3"
+    "4 5 6";
+}
+
+#check1 {
+  grid-area: "1";
+  width: 250px;
+}
+
+#check2 {
+  grid-area: "2";
+  width: 250px;
+}
+#check3 {
+  grid-area: "3";
+  width: 250px;
+}
+#check4 {
+  grid-area: "4";
+  width: 250px;
+}
+#check5 {
+  grid-area: "5";
+  width: 250px;
+}
+#check6 {
+  grid-area: "6";
+  width: 250px;
 }
 
 

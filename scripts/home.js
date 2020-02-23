@@ -7,6 +7,7 @@ const search = (ev) => {
 }
 
 
+
 document.querySelector('#search-bar').onkeyup = (ev) => {
     // Number 13 is the "Enter" key on the keyboard
     console.log(ev.keyCode);
@@ -19,9 +20,5 @@ document.querySelector('#search-bar').onkeyup = (ev) => {
           return;
         }
         window.location = "./templates/prefs.html?search=" + term;
-<<<<<<< HEAD
-=======
-
->>>>>>> 3f27eddce68d761c4e3edb59e5172d881aa67dba
     }
 };
