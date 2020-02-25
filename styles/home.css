@@ -37,8 +37,13 @@ html, body {
   width: 100%;
   margin-top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   grid-area: "nav";
+}
+
+.name-and-slogan {
+  display: flex;
+  flex-direction: column;
 }
 
 .app-name {
