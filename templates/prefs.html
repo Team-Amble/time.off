@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="../styles/prefs.css">
+        <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     </head>
     <body>
@@ -13,30 +14,34 @@
               <h1 class="display-4">What do you want us to plan?</h1>
 
               <div class="funkyradio">
-                  <div class="funkyradio-default">
-                      <input type="checkbox" name="checkbox" id="checkbox1">
-                      <label for="checkbox1">Restaurants</label>
+                  <div class="checkbox-row">
+                    <div id="check1" class="funkyradio-info">
+                        <input type="checkbox" name="checkbox" id="checkbox1">
+                        <label for="checkbox1">Restaurants</label>
+                    </div>
+                    <div id="check2" class="funkyradio-primary">
+                        <input type="checkbox" name="checkbox" id="checkbox2">
+                        <label for="checkbox2">Sightseeing</label>
+                    </div>
+                    <div id="check3" class="funkyradio-success">
+                        <input type="checkbox" name="checkbox" id="checkbox3">
+                        <label for="checkbox3">Relaxation</label>
+                    </div>
+                    <div id="check4" class="funkyradio-danger">
+                        <input type="checkbox" name="checkbox" id="checkbox4">
+                        <label for="checkbox4">Nature</label>
+                    </div>
+                    <div id="check5" class="funkyradio-warning">
+                        <input type="checkbox" name="checkbox" id="checkbox5">
+                        <label for="checkbox5">Nightlife</label>
+                    </div>
+                    <div id="check6" class="funkyradio-info">
+                        <input type="checkbox" name="checkbox" id="checkbox6">
+                        <label for="checkbox6">Local Events</label>
+                    </div>
                   </div>
-                  <div class="funkyradio-primary">
-                      <input type="checkbox" name="checkbox" id="checkbox2">
-                      <label for="checkbox2">Sightseeing</label>
-                  </div>
-                  <div class="funkyradio-success">
-                      <input type="checkbox" name="checkbox" id="checkbox3">
-                      <label for="checkbox3">Relaxation</label>
-                  </div>
-                  <div class="funkyradio-danger">
-                      <input type="checkbox" name="checkbox" id="checkbox4">
-                      <label for="checkbox4">Nature</label>
-                  </div>
-                  <div class="funkyradio-warning">
-                      <input type="checkbox" name="checkbox" id="checkbox5">
-                      <label for="checkbox5">Nightlife</label>
-                  </div>
-                  <div class="funkyradio-info">
-                      <input type="checkbox" name="checkbox" id="checkbox6">
-                      <label for="checkbox6">Local Events</label>
-                  </div>
+
+
               </div>
               <button id="make-itinerary" type="button" class="btn btn-primary btn-lg make-itn">Make Itinerary</button>
             </div>

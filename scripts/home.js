@@ -27,7 +27,6 @@ $('#search-bar').on("keypress", function(e) {
     //Check destination length
     if (term.length < 3 || term.length > 15){
       return;
-    }
     window.location = "./templates/prefs.html" + user_metadata + "?search=" + term;
   }
 })
