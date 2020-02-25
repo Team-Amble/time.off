@@ -9,13 +9,6 @@ html, body {
         background: transparent;
     }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
 
 .wrapper {
   display: grid;
@@ -44,8 +37,13 @@ html, body {
   width: 100%;
   margin-top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   grid-area: "nav";
+}
+
+.name-and-slogan {
+  display: flex;
+  flex-direction: column;
 }
 
 .app-name {
