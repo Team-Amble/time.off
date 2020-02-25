@@ -1,24 +1,22 @@
-let user_metadata = "?guest/";
-
-const createUser = (username, password) => {
-  const user = {
-    username,
-    password
-  };
-  return `?username=${user.username}`;
-}
-
-$('#login').on("click", function() {
-  user_metadata = createUser($('#username').val(), $('#password').val());
-})
+// let user_metadata = "?guest/";
+//
+// const createUser = (username, password) => {
+//   const user = {
+//     username,
+//     password
+//   };
+//   return `?username=${user.username}`;
+// }
+//
+// $('#login').on("click", function() {
+//   user_metadata = createUser($('#username').val(), $('#password').val());
+// })
 
 $('form').on("keypress", function (e) {
   if (e.which == 13) $(this).submit();
 });
 
 
-
-<<<<<<< HEAD
 $('#search-bar').on("keypress", function(e) {
   if (e.which == 13){
     const term = $('#search-bar').val();
@@ -28,22 +26,8 @@ $('#search-bar').on("keypress", function(e) {
     //Check destination length
     if (term.length < 3 || term.length > 15){
       return;
-=======
-document.querySelector('#search-bar').onkeyup = (ev) => {
-    // Number 13 is the "Enter" key on the keyboard
-    console.log(ev.keyCode);
-    if (ev.keyCode === 13) {
-        ev.preventDefault();
-        search();
-        const term = document.querySelector('#search-bar').value;
-        //Check destination length
-        if (term.length < 3 || term.length > 15){
-          return;
-        }
-        window.location = "./templates/prefs.html?search=" + term;
->>>>>>> 836b4e3bd0321588285bba10d0b20337d968f19a
     }
-    window.location = "./templates/prefs.html" + user_metadata + "?search=" + term;
+    window.location = "./templates/prefs.html?search=" + term;
   }
 })
 
