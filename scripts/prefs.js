@@ -4,10 +4,10 @@ window.addEventListener('DOMContentLoaded', function(){
   let l = window.location.href;
   let get_dest = l.split('=');
 
-  const user = get_dest[1].split('?')[0];
-  const destination = get_dest[2].replace('%20', ' ');
+  // const user = get_dest[1].split('?')[0];
+  const destination = get_dest[1].replace('%20', ' ');
 
-  document.querySelector('#username').innerText = user;
+  // document.querySelector('#username').innerText = user;
   document.querySelector('#dest').innerText = destination;
 }, false);
 
@@ -47,7 +47,11 @@ const createURL = () => {
 
 
 $('#make-itinerary').on("click", function(e) {
+  let l = window.location.href;
+  let get_dest = l.split('=');
+
+  // const user = get_dest[1].split('?')[0];
+  const destination = get_dest[1].replace('%20', ' ');
   let checked = createURL();
-  let url = "./templates/options.html?" + checked;
-  console.log(url);
+  window.location = "./options.html?checked=" + checked + "?destination=" + destination;
 })
