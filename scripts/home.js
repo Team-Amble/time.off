@@ -1,21 +1,20 @@
-let user_metadata = "?guest/";
-
-const createUser = (username, password) => {
-  const user = {
-    username,
-    password
-  };
-  return `?username=${user.username}`;
-}
-
-$('#login').on("click", function() {
-  user_metadata = createUser($('#username').val(), $('#password').val());
-})
+// let user_metadata = "?guest/";
+//
+// const createUser = (username, password) => {
+//   const user = {
+//     username,
+//     password
+//   };
+//   return `?username=${user.username}`;
+// }
+//
+// $('#login').on("click", function() {
+//   user_metadata = createUser($('#username').val(), $('#password').val());
+// })
 
 $('form').on("keypress", function (e) {
   if (e.which == 13) $(this).submit();
 });
-
 
 
 $('#search-bar').on("keypress", function(e) {
@@ -27,7 +26,8 @@ $('#search-bar').on("keypress", function(e) {
     //Check destination length
     if (term.length < 3 || term.length > 15){
       return;
-    window.location = "./templates/prefs.html" + user_metadata + "?search=" + term;
+    }
+    window.location = "./templates/prefs.html?search=" + term;
   }
 })
 
