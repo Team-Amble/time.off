@@ -5,7 +5,7 @@ const DESCRIPTIONS = [
     "For those views that take your breath away",
     "Sometimes you just need a little \"me\" time",
     "For when city-life gets a bit too claustrophobic",
-    "Because the dancefloor is calling your name",
+    "Because the dance floor is calling your name",
     "You want to immerse yourself in the local culture",
 ];
 
@@ -54,6 +54,7 @@ function getYelpData(term) {
   console.log(destination);
   destination = destination[2].split('=')[1];
   let url = yelpUrl + destination + '&term=' + term + "&limit=5";
+  console.log(url);
   fetch(url)
     .then(response => {
       return response.json();
@@ -94,3 +95,7 @@ window.addEventListener('DOMContentLoaded', function(){
   }
   addCardEventListener();
 }, false);
+
+$('#make-itinerary').on("click", function(e) {
+  window.location = "./page_calendar.html"
+})
