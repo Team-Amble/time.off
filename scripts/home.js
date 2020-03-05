@@ -1,34 +1,28 @@
-// let user_metadata = "?guest/";
-//
-// const createUser = (username, password) => {
-//   const user = {
-//     username,
-//     password
-//   };
-//   return `?username=${user.username}`;
-// }
-//
-// $('#login').on("click", function() {
-//   user_metadata = createUser($('#username').val(), $('#password').val());
-// })
-
 $('form').on("keypress", function (e) {
   if (e.which == 13) $(this).submit();
 });
 
+function load_page() {
+  const term = $('#search-bar').val();
+  if (term.length < 3 || term.length > 15){
+    return;
+  }
+  window.location = "./templates/prefs.html?search=" + term;
+}
 
 $('#search-bar').on("keypress", function(e) {
   if (e.which == 13){
-    const term = $('#search-bar').val();
+
     console.log(term);
 
 
     //Check destination length
-    if (term.length < 3 || term.length > 15){
-      return;
-    }
-    window.location = "./templates/prefs.html?search=" + term;
+    load_page();
   }
+})
+
+$('#search-btn').on("click", function() {
+  load_page();
 })
 
 
