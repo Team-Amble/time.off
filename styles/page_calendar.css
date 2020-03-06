@@ -34,6 +34,8 @@ h1 {
   background: #eee;
   text-align: left;
   overflow: scroll;
+
+
 }
 
 #external-events h4 {
@@ -64,6 +66,7 @@ body {
   position: relative;
   height:100%;
 }
+
 
 /* Dropdown Button */
 .drop-button {
@@ -109,3 +112,4 @@ body {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+

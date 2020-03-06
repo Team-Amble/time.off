@@ -64,14 +64,12 @@ window.onclick = function(event) {
   }
 }
 
-
 document.addEventListener('DOMContentLoaded', function() {
     var Calendar = FullCalendar.Calendar;
     /*var calendarEl = document.getElementById('calendar');*/
     var Draggable = FullCalendarInteraction.Draggable
 
     console.log('Dom acquire active')
-
     var containerEl = document.getElementById('external-events-list');
     new Draggable(containerEl, {
       itemSelector: '.fc-event',
@@ -94,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
       right: 'timeGridDay,timeGridFourDay,timeGridWeek'
       },
       footer: {
+
         center: ' ',
         right: 'today prev, next'
       },
@@ -108,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
       defaultDate: '2020-03-03',
       navLinks: true, // can click day/week names to navigate views
       editable: true,
+
       droppable: true,
 
       eventLimit: true, // allow "more" link when too many events
@@ -117,3 +117,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
   calendar.render();
 });
+
