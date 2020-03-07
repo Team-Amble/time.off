@@ -36,13 +36,23 @@ const addDataToModal = (yelpData) => {
   console.log(yelpData)
 
   for (place of yelpData){
+    console.log(place);
     if (typeof place['price'] == 'undefined'){
-      second = ""
+      price = ""
     }
     else {
-      second = `-- ${place['price']}`
+      price = place['price'];
     }
-    let template = `<p class="yelp-item">${place['name']} ${second}</p>`;
+
+    let template = `<div class="yelp-item">
+                        <img class="yelp-image" src="${place['image_url']}">
+                        <div class="yelp-text">
+                          <a class="yelp-link" href="https://www.yelp.com/biz/${place['id']}">${place['name']}<span class="price">${price}</span></a>
+                          <p class="address-and-rating">${place['display_address']}</p>
+                        </div>
+                      </div>`;
+
+
     yelpDataList.innerHTML += template;
   }
   return;

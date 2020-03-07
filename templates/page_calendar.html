@@ -12,6 +12,53 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+
+
+  <body>
+    <div class="wrapper-calendar">
+
+      <h1 class="header">Customize Your Itinerary</h1>
+
+    <div id='back'>
+
+      <div id='box'>
+
+
+
+        <div id='wrap'>
+
+          <div id='calendar'></div>
+
+          <div id='external-events'>
+
+            <div class="dropdown">
+              <input type="button" class="drop-button" onclick="showMenu()" value="Click here to browse categories">
+              <div id="myDropdown" class="dropdown-content"></div>
+            </div>
+
+            <div id='external-events-list'>
+            </div>
+            <!-- <p>
+              <input type='checkbox' id='drop-remove' />
+
+              <label for='drop-remove'>remove after drop</label>
+            </p> -->
+          </div>
+
+
+
+        </div>
+
+
+
+          <div style='clear:both'></div>
+        </div>
+      </div>
+    </div>
+
     <script src='./@fullcalendar/core/main.js' ></script>
     <script src='./@fullcalendar/interaction/main.js' ></script>
     <script src='./@fullcalendar/list/main.js' ></script>
@@ -19,44 +66,6 @@
     <script src='./@fullcalendar/timegrid/main.js' ></script>
 
     <script src="../scripts/page_calendar.js"></script>
-  </head>
-
-
-  
-  <body>
-    <div id='back'>
-
-      <div id='box'>
-
-        <h1>Customize Your Itinerary</h1>
-
-        <div id='wrap'>
-
-          <div id='external-events'>
-
-            <div class="dropdown">
-              <input type="button" class="drop-button" onclick="showMenu()" value="Categories">
-              <div id="myDropdown" class="dropdown-content"></div>
-            </div>
-
-            <div id='external-events-list'>
-            </div>
-            <p>
-              <input type='checkbox' id='drop-remove' />
-
-              <label for='drop-remove'>remove after drop</label>
-            </p>
-          </div>
-
-        </div>
-
-        <div id='calendar'></div>
-
-        <div style='clear:both'></div>
-
-      </div>
-
-    </div>
 
   </body>
 
