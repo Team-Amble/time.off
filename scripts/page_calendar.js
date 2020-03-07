@@ -41,27 +41,29 @@ function getYelpData(term) { //term is category ie. restaurants
 
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
+  console.log(event.target);
+  document.getElementById('myDropdown').innerHTML = "";
+
   if (!event.target.matches('.drop-button')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     // dropdowns.innerhtml =  stuff from checkboxes
     document.getElementById('myDropdown').innerHTML = "";
-    let k = 1;
+    }
+
     for (let number of checked) {
       const num = parseInt(number-1);
       document.getElementById('myDropdown').innerHTML += `<a id = "${num}" onclick="showYelp(this);" href="#">${ACTIVITIES[num]}</a>`
       //console.log(document.getElementById('myDropdown').innerHTML);
-      k++;
-    }
     // var dropdowns = document.getElementsByClassName("dropdown-content"); // added this
-
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
+  }
+    for (let i = 0; i < checked.length; i++) {
+      console.log(dropdowns);
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
     }
-  }
+
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -117,4 +119,3 @@ document.addEventListener('DOMContentLoaded', function() {
 
   calendar.render();
 });
-
