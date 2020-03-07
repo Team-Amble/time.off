@@ -5,7 +5,7 @@ const DESCRIPTIONS = [
     "For those views that take your breath away",
     "Sometimes you just need a little \"me\" time",
     "For when city-life gets a bit too claustrophobic",
-    "Because the dancefloor is calling your name",
+    "Because the dance floor is calling your name",
     "You want to immerse yourself in the local culture",
 ];
 
@@ -36,7 +36,13 @@ const addDataToModal = (yelpData) => {
   console.log(yelpData)
 
   for (place of yelpData){
-    let template = `<p>${place['name']} -- ${place['price']}</p>`;
+    if (typeof place['price'] == 'undefined'){
+      second = ""
+    }
+    else {
+      second = `-- ${place['price']}`
+    }
+    let template = `<p class="yelp-item">${place['name']} ${second}</p>`;
     yelpDataList.innerHTML += template;
   }
   return;
@@ -44,7 +50,11 @@ const addDataToModal = (yelpData) => {
 
 
 function getYelpData(term) {
-  let url = yelpUrl + term + "&limit=5";
+  let destination = window.location.href.split('?');
+  console.log(destination);
+  destination = destination[2].split('=')[1];
+  let url = yelpUrl + destination + '&term=' + term + "&limit=5";
+  console.log(url);
   fetch(url)
     .then(response => {
       return response.json();
@@ -73,10 +83,11 @@ window.addEventListener('DOMContentLoaded', function(){
 
   // Dynamically create cards based on user selection
   let url = window.location.href;
-  let get_checked = url.split('=');
+  let get_checked = url.split('=')[1];
+  get_checked = get_checked.split('?')[0];
   $('#cards').innerHTML = "";
   let i = 1;
-  for (number of get_checked[1]){
+  for (number of get_checked){
     const num = parseInt(number-1);
     const card = createCard(ACTIVITIES[num], DESCRIPTIONS[num], i);
     document.querySelector('#cards').innerHTML += card;
@@ -84,3 +95,7 @@ window.addEventListener('DOMContentLoaded', function(){
   }
   addCardEventListener();
 }, false);
+
+$('#make-itinerary').on("click", function(e) {
+  window.location = "./page_calendar.html"
+})

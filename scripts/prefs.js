@@ -47,6 +47,13 @@ const createURL = () => {
 
 
 $('#make-itinerary').on("click", function(e) {
+  let l = window.location.href;
+  let get_dest = l.split('=');
+
+  // const user = get_dest[1].split('?')[0];
+  const destination = get_dest[1].replace('%20', ' ');
   let checked = createURL();
-  window.location = "./options.html?checked=" + checked;
+  window.localStorage.setItem('checked', checked); // added
+  window.localStorage.setItem('dest', destination);
+  window.location = "./options.html?checked=" + checked + "?destination=" + destination;
 })
