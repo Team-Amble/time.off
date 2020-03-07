@@ -42,6 +42,7 @@ function getYelpData(term) { //term is category ie. restaurants
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
   console.log(event.target);
+  document.getElementById('myDropdown').innerHTML = "";
 
   if (!event.target.matches('.drop-button')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -55,7 +56,7 @@ window.onclick = function(event) {
       //console.log(document.getElementById('myDropdown').innerHTML);
     // var dropdowns = document.getElementsByClassName("dropdown-content"); // added this
   }
-    for (let i = 0; i < dropdowns.length; i++) {
+    for (let i = 0; i < checked.length; i++) {
       console.log(dropdowns);
       var openDropdown = dropdowns[i];
       if (openDropdown.classList.contains('show')) {
