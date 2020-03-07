@@ -3,8 +3,16 @@ body, html {
   height: 100vh;
 }
 
-.make-itn{
-  margin-top: 60px;
+#make-itinerary {
+  margin-top: 0;
+  margin-left: 50%;
+  margin-right: 5%;
+  float: right;
+}
+
+.itn-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .wrapper{
@@ -25,7 +33,9 @@ body, html {
   overflow-x: hidden;
 }
 
-h3 {
+
+
+.wrapper h3 {
   margin-left: 40px;
   color: white;
 }
@@ -43,6 +53,7 @@ h3 {
   grid-area: "card1";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -52,6 +63,7 @@ h3 {
   grid-area: "card2";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -61,6 +73,7 @@ h3 {
   grid-area: "card3";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -69,7 +82,8 @@ h3 {
   background-color: #fdfefe;
   grid-area: "card4";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -78,7 +92,8 @@ h3 {
   background-color: #fdfefe;
   grid-area: "card5";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -87,7 +102,8 @@ h3 {
   background-color: #fdfefe;
   grid-area: "card6";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -98,6 +114,38 @@ img {
 }
 
 .yelp-item {
-  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
 
+.yelp-item img {
+  width: 50%;
+}
+
+.yelp-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.yelp-link{
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.yelp-link:hover {
+  text-decoration: none;
+}
+
+.price {
+  font-size: 15px;
+  float: right;
+}
+
+.address-and-rating {
+  font-size: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
