@@ -3,8 +3,16 @@ body, html {
   height: 100vh;
 }
 
-.make-itn{
-  margin-top: 60px;
+#make-itinerary {
+  margin-top: 0;
+  margin-left: 50%;
+  margin-right: 5%;
+  float: right;
+}
+
+.itn-wrapper {
+  display: flex;
+  flex-direction: row;
 }
 
 .wrapper{
@@ -45,6 +53,7 @@ body, html {
   grid-area: "card1";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -54,6 +63,7 @@ body, html {
   grid-area: "card2";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -63,6 +73,7 @@ body, html {
   grid-area: "card3";
   margin-right: 70px;
   margin-top: 40px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -71,7 +82,8 @@ body, html {
   background-color: #fdfefe;
   grid-area: "card4";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -80,7 +92,8 @@ body, html {
   background-color: #fdfefe;
   grid-area: "card5";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }
@@ -89,7 +102,8 @@ body, html {
   background-color: #fdfefe;
   grid-area: "card6";
   margin-right: 70px;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 18rem;
   border-radius: 20px;
 }

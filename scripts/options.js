@@ -47,7 +47,7 @@ const addDataToModal = (yelpData) => {
     let template = `<div class="yelp-item">
                         <img class="yelp-image" src="${place['image_url']}">
                         <div class="yelp-text">
-                          <a class="yelp-link" href="https://www.yelp.com/biz/${place['id']}">${place['name']}<span class="price">${price}</span></a>
+                          <a class="yelp-link" href="https://www.yelp.com/biz/${place['id']}" target="_blank">${place['name']}<span class="price">${price}</span></a>
                           <p class="address-and-rating">${place['display_address']}</p>
                         </div>
                       </div>`;
