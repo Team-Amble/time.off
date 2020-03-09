@@ -31,6 +31,17 @@ $('#search-bar').on("keypress", function(e) {
   }
 })
 
+$('#search-btn').on("click", function(btn) {
+    const term = $('#search-bar').val();
+    console.log(term);
+
+
+    //Check destination length
+    if (term.length < 3 || term.length > 15){
+      return;
+    }
+    window.location = "./templates/prefs.html?search=" + term;
+})
 
 // document.querySelector('#search-bar').onkeyup = (ev) => {
 //     // Number 13 is the "Enter" key on the keyboard
