@@ -29,7 +29,7 @@ Given that the demographic of ‘traveler’ is extremely vague, we chose to nar
 
 Users seemed interested in the idea, and liked the general layout we presented. However, they also did give us insight into potential usability issues we would need to address down the line. Mostly, users were concerned with our interface not being intuitive enough--for example, several people commented on how to know exactly where to click and what to do on each page. From this feedback, we made sure that one of our main priorities when moving into the computer prototype was to ensure that our interface was as easy-to-use and intuitive as possible.
 
-![image1] (/report_static/image1.jpg)
+![image1](/report_static/image1.jpg)
 
 ## High-Fidelity Prototyping
 We created our high-fidelity prototype to support the following tasks:
@@ -55,8 +55,8 @@ If we had more time, we would focus on really refining the final calendar page. 
 
 ## Links
 
-[Team repository] https://github.com/Team-Amble/time.off
-[Final Prototype Demo] https://youtu.be/374cqGKtul4
+[Team repository](https://github.com/Team-Amble/time.off)
+[Final Prototype Demo](https://youtu.be/374cqGKtul4)
 
 
 
