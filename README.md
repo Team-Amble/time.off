@@ -31,6 +31,10 @@ Users seemed interested in the idea, and liked the general layout we presented. 
 
 ![image1](/report_static/image1.jpg)
 
+![image4](/report_static/image1.jpg)
+
+![image3](/report_static/image1.jpg)
+
 ## High-Fidelity Prototyping
 We created our high-fidelity prototype to support the following tasks:
 1. Input a travel destination and select categories of interest
@@ -56,6 +60,7 @@ If we had more time, we would focus on really refining the final calendar page. 
 ## Links
 
 [Team repository](https://github.com/Team-Amble/time.off)
+
 [Final Prototype Demo](https://youtu.be/374cqGKtul4)
 
 
