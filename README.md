@@ -44,6 +44,18 @@ In order to support the above tasks, we implemented the following components:
 
 4. ™ Branding (Overall prototype): A detailed essay of our ™ branding can be found in our P7 branding essay, but generally speaking, our branding shows up in the form of our consistent design across pages. This includes fonts, colors, logo and visual organization. 
 
+## Reflection
+Over the course of the quarter, we successfully implemented all three of the tasks we set out to do, and continually made improvements from instructor and user feedback. 
+
+For example, this included things like updating the information presented on each card on page 3 of our website to show images and links, revising font choice to keep the overall “look” consistent, and updating each page to be more intuitive as to where to click and what to do. Our last two pages, which include Yelp API integration and a customizable calendar, were definitely the most difficult pages to develop, but gave us the opportunity to really push ourselves to apply what we were learning in class to our project.
+
+If we had more time, we would focus on really refining the final calendar page. At the moment, it presents a random week, but ideally, the user would input the date range of their travel in the home page, and that information would be stored and implemented to make the calendar even more customized. Also, we would find a way to alter the amount of time each event on the calendar takes up--currently, there are only 1-hour and all-day options. Finally, we would integrate the ability to delete an event from the calendar once it has been added.
+
+## Links
+
+[Team repository] https://github.com/Team-Amble/time.off
+[Final Prototype Demo] https://youtu.be/374cqGKtul4
+
 
 
 
