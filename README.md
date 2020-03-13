@@ -49,6 +49,8 @@ In order to support the above tasks, we implemented the following components:
 
 ![image7](/report_static/image7.png)
 
+![image10](/report_static/image10.png)
+
 2. External Data Integration (Task 2): Our prototype takes the user-inputted location from the home page and integrates data from Yelp in order to display relevant options for the user based on their category preferences. External data integration gives our prototype most of its primary function, by providing the bulk of the actual data we wish to present. It is an extremely integral part of our design, and allows us to aggregate travel data to present to the user in an easy-to-digest manner.
 
 ![image9](/report_static/image2.png)
