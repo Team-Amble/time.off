@@ -29,6 +29,8 @@ Given that the demographic of ‘traveler’ is extremely vague, we chose to nar
 
 Users seemed interested in the idea, and liked the general layout we presented. However, they also did give us insight into potential usability issues we would need to address down the line. Mostly, users were concerned with our interface not being intuitive enough--for example, several people commented on how to know exactly where to click and what to do on each page. From this feedback, we made sure that one of our main priorities when moving into the computer prototype was to ensure that our interface was as easy-to-use and intuitive as possible.
 
+![image1] (/report_static/image1.jpg)
+
 ## High-Fidelity Prototyping
 We created our high-fidelity prototype to support the following tasks:
 1. Input a travel destination and select categories of interest
