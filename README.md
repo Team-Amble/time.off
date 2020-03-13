@@ -33,6 +33,8 @@ Users seemed interested in the idea, and liked the general layout we presented. 
 
 ![image4](/report_static/image4.jpg)
 
+![image6](/report_static/image6.jpg)
+
 ![image3](/report_static/image3.jpg)
 
 ## High-Fidelity Prototyping
@@ -45,8 +47,15 @@ In order to support the above tasks, we implemented the following components:
 
 1. Data Collection Form (Task 1): This form takes in text input (search bar) and checkbox input (category selection). On page 1, if the user types a destination less than 3 or greater than 15 characters, the search button/enter key will not work, AKA the website will not let the user progress. This was integrated in order to limit mistypes.
 
+![image7](/report_static/image7.jpg)
+
 2. External Data Integration (Task 2): Our prototype takes the user-inputted location from the home page and integrates data from Yelp in order to display relevant options for the user based on their category preferences. External data integration gives our prototype most of its primary function, by providing the bulk of the actual data we wish to present. It is an extremely integral part of our design, and allows us to aggregate travel data to present to the user in an easy-to-digest manner.
+
+![image9](/report_static/image2.jpg)
+
 3. Custom Calendar (Task 3): Our calendar is a streamlined, customized page that combines user preferences and the Yelp API to create a personalized itinerary for each person’s trip. The site offers recommended activities in each of the categories selected by the user, and by simply dragging and dropping from these lists, the user can easily customize their itinerary. 
+
+![image8](/report_static/image8.jpg)
 
 4. ™ Branding (Overall prototype): A detailed essay of our ™ branding can be found in our P7 branding essay, but generally speaking, our branding shows up in the form of our consistent design across pages. This includes fonts, colors, logo and visual organization. 
 
