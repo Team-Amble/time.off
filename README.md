@@ -1,5 +1,5 @@
 # Time.Off
-A travel app for people
+A travel app for people. [Click here to view](https://team-amble.github.io/time.off)
 
 ## Problem & Related Work
 The problem we decided to tackle in our application deals with the issue of not knowing how to maximize one’s time in a foreign city or place. When traveling on a limited time frame, there are only so many places one can visit and only so many things one can do. Our application aims to provide users with a restaurant, event, and sightseeing itinerary depending on their location and available time. This differs from similar existing applications in that ours does not focus on travel logistics (i.e. flights, hotels, transportation, etc.) but instead is concerned with planning day and night activities.
