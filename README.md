@@ -33,9 +33,9 @@ Users seemed interested in the idea, and liked the general layout we presented. 
 
 ![image1](/report_static/image1.jpg)
 
-![image4](/report_static/image4.jpg)
-
 ![image6](/report_static/image6.jpg)
+
+![image4](/report_static/image4.jpg)
 
 ![image3](/report_static/image3.jpg)
 
