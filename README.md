@@ -68,6 +68,20 @@ For example, this included things like updating the information presented on eac
 
 If we had more time, we would focus on really refining the final calendar page. At the moment, it presents a random week, but ideally, the user would input the date range of their travel in the home page, and that information would be stored and implemented to make the calendar even more customized. Also, we would find a way to alter the amount of time each event on the calendar takes up--currently, there are only 1-hour and all-day options. Finally, we would integrate the ability to delete an event from the calendar once it has been added.
 
+## Instructions for Use
+We tried to make the website as intuitive and user-friendly as possible, but for the purposes of evaluation we haved added a guide to using the website. 
+
+Steps:
+  1. Choose a destination and enter it in the search field – note: some random cities don't work (Yelp API is weird like that) but almost all major ones do especially in the US.
+  
+  2. Select the activities you would like our planner to plan, then click make itinerary.
+  
+  3. Click on each card to learn more about the options that will be planned. Each card retrieves info from the Yelp API and displays it – you can click the name of each destination to be redirected to its Yelp page. Then click make itinerary.
+  
+  4. Click on the choose your activities section, choose a genre of activities and drag and drop ones that you want in the calendar. 
+  
+  It's that simple!
+
 ## Links
 
 [Team repository](https://github.com/Team-Amble/time.off)
